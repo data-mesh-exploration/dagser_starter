@@ -17,3 +17,8 @@ def cereals():
 def nabisco_cereals(cereals):
     """Cereals manufactured by Nabisco"""
     return [row for row in cereals if row["mfr"] == "N"]
+
+@asset
+def pakou_cereals(cereals):
+    """Cereals manufactured by Pakompany"""
+    return [row for row in cereals if row["mfr"] == "P"]
